@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Adminitrator.vue ir renders the component 1`] = `
+<v-card>
+  <v-card-title>
+    <v-col cols="12" sm="5" class="order-search">
+      <v-text-field append-icon="mdi-magnify" label="Buscar" single-line="" hide-details=""></v-text-field>
+    </v-col>
+    <v-spacer></v-spacer>
+    <v-col cols="12" sm="2" class="text-right order-icon">
+      <v-btn color="primary" dark="" icon="" large="" class="mr-5">
+        <v-icon>person_add</v-icon>
+      </v-btn>
+      <v-btn icon="" small="">
+        <v-icon color="primary">refresh</v-icon>
+      </v-btn>
+    </v-col>
+  </v-card-title>
+  <v-data-table headers="[object Object],[object Object],[object Object],[object Object],[object Object]" search="" sort-by="calories" class="elevation-1"></v-data-table>
+</v-card>
+`;
+
+exports[`Adminitrator.vue it renders the component 1`] = `
+<v-card-stub loaderheight="4" tag="div">
+  <v-card-title-stub>
+    <v-col-stub cols="12" sm="5" tag="div" class="order-search">
+      <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" value="" appendicon="mdi-magnify" backgroundcolor="" hidedetails="true" label="Buscar" loaderheight="2" clearicon="$clear" singleline="true" type="text"></v-text-field-stub>
+    </v-col-stub>
+    <v-spacer-stub></v-spacer-stub>
+    <v-col-stub cols="12" sm="2" tag="div" class="text-right order-icon">
+      <v-btn-stub color="primary" dark="true" tag="button" activeclass="" large="true" icon="true" type="button" class="mr-5">
+        <v-icon-stub>person_add</v-icon-stub>
+      </v-btn-stub>
+      <v-btn-stub tag="button" activeclass="" small="true" icon="true" type="button">
+        <v-icon-stub color="primary">refresh</v-icon-stub>
+      </v-btn-stub>
+    </v-col-stub>
+  </v-card-title-stub>
+  <v-data-table-stub mobilebreakpoint="600" items="" options="[object Object]" sortby="calories" sortdesc="" customsort="[Function]" page="1" itemsperpage="10" groupby="" groupdesc="" customgroup="[Function]" locale="en-US" search="" customfilter="[Function]" serveritemslength="-1" itemkey="id" value="" expanded="" noresultstext="$vuetify.dataIterator.noResultsText" nodatatext="$vuetify.noDataText" loadingtext="$vuetify.dataIterator.loadingText" selectablekey="isSelectable" loaderheight="4" headers="[object Object],[object Object],[object Object],[object Object],[object Object]" expandicon="$expand" itemclass="" class="elevation-1"></v-data-table-stub>
+</v-card-stub>
+`;
