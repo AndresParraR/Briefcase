@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c60cf4c.chunk.css",
+    "main.js": "/static/js/main.1ca1699a.chunk.js",
+    "main.js.map": "/static/js/main.1ca1699a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.26b9b3f4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.26b9b3f4.js.map",
+    "static/js/2.5aba8e6f.chunk.js": "/static/js/2.5aba8e6f.chunk.js",
+    "static/js/2.5aba8e6f.chunk.js.map": "/static/js/2.5aba8e6f.chunk.js.map",
+    "static/js/3.d8c28e0e.chunk.js": "/static/js/3.d8c28e0e.chunk.js",
+    "static/js/3.d8c28e0e.chunk.js.map": "/static/js/3.d8c28e0e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3c60cf4c.chunk.css.map": "/static/css/main.3c60cf4c.chunk.css.map",
+    "static/js/2.5aba8e6f.chunk.js.LICENSE.txt": "/static/js/2.5aba8e6f.chunk.js.LICENSE.txt",
+    "static/media/PlayStore.2541b83b.png": "/static/media/PlayStore.2541b83b.png",
+    "static/media/Swagger-logo.afd1bfb8.png": "/static/media/Swagger-logo.afd1bfb8.png",
+    "static/media/appStore.8fc48c53.png": "/static/media/appStore.8fc48c53.png",
+    "static/media/computerDashboard.a7ad3c5c.png": "/static/media/computerDashboard.a7ad3c5c.png",
+    "static/media/mobile1.05189ff2.png": "/static/media/mobile1.05189ff2.png",
+    "static/media/mobile2.d241d13c.png": "/static/media/mobile2.d241d13c.png",
+    "static/media/mobile3.59d01ac6.png": "/static/media/mobile3.59d01ac6.png",
+    "static/media/mobile4.40eb7878.png": "/static/media/mobile4.40eb7878.png",
+    "static/media/mobile5.a6a3b5a5.png": "/static/media/mobile5.a6a3b5a5.png",
+    "static/media/monitoringAngular.5321c912.png": "/static/media/monitoringAngular.5321c912.png",
+    "static/media/monitoringReact.7c6d2a59.png": "/static/media/monitoringReact.7c6d2a59.png",
+    "static/media/monitoringVue.39439556.png": "/static/media/monitoringVue.39439556.png",
+    "static/media/personDark.d1159ddb.jpg": "/static/media/personDark.d1159ddb.jpg",
+    "static/media/tree.51dc815c.jpg": "/static/media/tree.51dc815c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26b9b3f4.js",
+    "static/js/2.5aba8e6f.chunk.js",
+    "static/css/main.3c60cf4c.chunk.css",
+    "static/js/main.1ca1699a.chunk.js"
+  ]
+}
