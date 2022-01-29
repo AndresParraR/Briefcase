@@ -78,7 +78,13 @@ function MainContainer() {
       borderRadius: 15,
       backgroundColor: '#FFF',
       position: 'relative',
-      zIndex: 1
+      zIndex: 1,
+      '@media (max-width: 992px)':{
+        margin: '0px 40px 0',
+      },
+      '@media (max-width: 500px)':{
+        margin: 0,
+      }
     },
   }));
 

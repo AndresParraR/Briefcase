@@ -17,7 +17,10 @@ const Monitorings = (props) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-
+      '@media (max-width: 992px)':{
+        flexDirection: 'column-reverse',
+        alignItems: 'center'
+      }
     },
     containImages:{
       display: 'flex',
@@ -25,7 +28,10 @@ const Monitorings = (props) => {
       flexDirection: 'column',
       alignItems: 'center',
       maxWidth: '50%',
-      marginRight: '5em'
+      marginRight: '5em',
+      '@media (max-width: 992px)':{
+        marginRight: 0,
+      }
     },
     imageMonitoring:{
       width: '110%',
@@ -33,32 +39,52 @@ const Monitorings = (props) => {
       boxShadow: '0 13px 16px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%)'
     },
     containText:{
-      maxWidth: '40%'
+      maxWidth: '40%',
+      '@media (max-width: 992px)':{
+        maxWidth: 400
+      }
     },
     titleMonitorings:{
       fontSize: '2rem',
       fontWeight: '600',
       lineHeight: '1.4em',
-      marginBottom: 30
+      marginBottom: 30,
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     },
     paragraphMonitorings:{
       fontSize: '1.1rem',
       lineHeight: '1.55em',
       fontWeight: 300,
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     },
     containImage3D:{
-      transform : 'rotate3d(18, 18, -21, 23deg)'
+      transform : 'rotate3d(18, 18, -21, 23deg)',
+      '@media (max-width: 992px)':{
+        transform: 'none',
+      }
     },
     containImage:{
       perspective: 900,
       transformStyle: 'preserve-3d',
       position: 'relative',
-      left: -95
+      left: -15,
+      '@media (max-width: 992px)':{
+        left: 0,
+        marginTop: '5em'
+      },
     },
     containButtons:{
       display: 'flex',
       marginTop: 50,
       justifyContent: 'space-between',
+      '@media (max-width: 500px)':{
+        flexWrap: 'wrap',
+        justifyContent: 'center'
+      }
     },
     buttonBase:{
       borderRadius: 30,
@@ -66,6 +92,9 @@ const Monitorings = (props) => {
       backgroundColor: 'rgba(255, 255, 255, .9)',
       "&:hover": {
         color: '#FFF !important'
+      },
+      '@media (max-width: 500px)':{
+        margin: '10px',
       }
     },
     btnReact:{
@@ -103,18 +132,24 @@ const Monitorings = (props) => {
         </h5>
         <div className={classes.containButtons}>
           <Button
+            href="https://andresparrar.github.io/monitoringReact/"
+            target="_blank"
             variant="contained"
             className={clsx(classes.buttonBase, classes.btnReact)}
             style={{color: "#1389FD", border: "1px solid rgba(19, 137, 253, 0.5)"}}>
             React JS
           </Button>
           <Button
+            href="https://andresparrar.github.io/monitoringVue/"
+            target="_blank"
             variant="contained"
             className={clsx(classes.buttonBase, classes.btnVue)}
             style={{color: "#42b983", border: "1px solid rgba(66, 185, 131, 0.5)"}}>
             Vue JS PRO
           </Button>
           <Button
+            href="https://andresparrar.github.io/monitoringAngular/"
+            target="_blank"
             variant="contained"
             className={clsx(classes.buttonBase, classes.btnAngular)}
             style={{color: "#dd0031", border: "1px solid rgba(221, 0, 49, 0.5)"}}>

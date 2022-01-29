@@ -26,10 +26,13 @@ const ProjectsGit = (props) => {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
+      '@media (max-width: 500px)':{
+        padding: 0,
+      }
     },
     containGithubs:{
       display: 'flex',
-      marginTop: 20
+      marginTop: 20,
     },
     githubLink:{
       margin: '0 30px',
@@ -42,6 +45,10 @@ const ProjectsGit = (props) => {
       display: 'flex',
       flexWrap: 'wrap',
       width: '100%',
+      '@media (max-width: 992px)':{
+        flexDirection: 'column',
+        alignItems: 'center'
+      }
     },
     containAllGithub:{
       display: 'flex',
@@ -55,6 +62,11 @@ const ProjectsGit = (props) => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+    },
+    titles:{
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     }
   }));
 
@@ -65,16 +77,16 @@ const ProjectsGit = (props) => {
       {/* <h1 style={{fontWeight: 500}}>Check my code!</h1> */}
       <div className={classes.containGitAndSwagger}>
         <div className={classes.containAllGithub}>
-          <h1 style={{fontWeight: 600}} className={classes.marginTB}>Check my code!</h1>
+          <h1 style={{fontWeight: 600}} className={clsx(classes.marginTB, classes.titles)}>Check my code!</h1>
           <div className={classes.containGithubs}>
             <div className={classes.githubLink}>
-              <IconButton href="https://github.com/JohnArlinton/AdminTemplateVueJS" target="_blank" aria-label="delete">
+              <IconButton href="https://github.com/AndresParraR/dashboardVue/" target="_blank" aria-label="delete">
                 <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
               </IconButton>
               <h4>Vue Project</h4>
             </div>
             <div className={classes.githubLink}>
-              <IconButton href="https://github.com/JohnArlinton/MonitoringTemplateReact" target="_blank" aria-label="delete">
+              <IconButton href="https://github.com/AndresParraR/monitoringReact/" target="_blank" aria-label="delete">
                 <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
               </IconButton>
               <h4>React Project</h4>
@@ -82,8 +94,8 @@ const ProjectsGit = (props) => {
           </div>
         </div>
         <div className={classes.containSwagger}>
-          <h1 style={{margin: '30px 0', fontWeight: 600}}>Check my API</h1>
-          <IconButton>
+          <h1 style={{margin: '30px 0', fontWeight: 600}} className={classes.titles}>Check my API</h1>
+          <IconButton href="https://briefcase-api-node.herokuapp.com/api-docs/" target="_blank">
             <img style={{width: 80, height: 80}} src={swaggerIcon} alt="Swagger" />
           </IconButton>
           <h4>Swagger</h4>

@@ -23,16 +23,25 @@ const Mobile = (props) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-
+      '@media (max-width: 992px)':{
+        flexDirection: 'column',
+        alignItems: 'center'
+      }
     },
     containImage:{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      maxWidth: '50%',
-      marginLeft: '7em',
+      maxWidth: '60%',
+      marginLeft: '10em',
       perspective: 900,
       transformStyle: 'preserve-3d',
+      '@media (max-width: 992px)':{
+        marginTop: '5em',
+        maxWidth: 'none',
+        flexWrap: 'wrap',
+        marginLeft: 0
+      }
     },
     containImage3D:{
       transform : 'rotateY(-25deg)',
@@ -42,28 +51,54 @@ const Mobile = (props) => {
       backgroundColor: '#FFF',
       boxShadow: '10px 4px 14px rgb(0 0 0 / 12%)',
       transition: 'all .1s',
+      "&:hover": {
+        marginTop: -100
+      },
+      '@media (max-width: 1200px)':{
+        height: 325,
+        width: 150,
+        marginLeft: '-5em !important'
+      },
+      '@media (max-width: 992px)':{
+        margin: '30px',
+        transform: 'none',
+        marginLeft: '0 !important'
+      }
     },
     imageDashboard:{
       width: '110%'
     },
     containText:{
-      maxWidth: '40%'
+      maxWidth: '40%',
+      '@media (max-width: 992px)':{
+        maxWidth: '100%',
+      }
     },
     titleDashboards:{
       fontSize: '2rem',
       fontWeight: '600',
       lineHeight: '1.4em',
-      marginBottom: 30
+      marginBottom: 30,
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     },
     paragraphDashboards:{
       fontSize: '1.1rem',
       lineHeight: '1.55em',
       fontWeight: 300,
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     },
     containButtons:{
       display: 'flex',
       marginTop: 50,
       justifyContent: 'space-between',
+      '@media (max-width: 992px)':{
+        flexWrap: 'wrap',
+        justifyContent: 'center'
+      }
     },
     buttonBase:{
       borderRadius: 30,
@@ -78,19 +113,12 @@ const Mobile = (props) => {
       backgroundColor: '#f50057',
       borderRadius: 30,
     },
-    card:{
-      "&:hover": {
-        "& $containImage3D": {
-          marginTop: -100
-        }
-      },
-    },
     marginL:{
       marginLeft: '-6em'
     },
     imageBase:{
       width: '100%',
-      borderRadius: 15
+      borderRadius: 15,
     },
     imgStoreBtn:{
       width: 190,
@@ -126,31 +154,31 @@ const Mobile = (props) => {
         </div>
       </div>
       <div className={classes.containImage}>
-        <div className={classes.card}>
+        
           <div className={classes.containImage3D}>
             <img className={classes.imageBase} src={mobile1} alt="" />
           </div>
-        </div>
-        <div className={classes.card}>
+        
+        
           <div className={clsx(classes.containImage3D, classes.marginL)}>
           <img className={classes.imageBase} src={mobile2} alt="" />
           </div>
-        </div>
-        <div className={classes.card}>
+        
+        
           <div className={clsx(classes.containImage3D, classes.marginL)}>
             <img className={classes.imageBase} src={mobile3} alt="" />
           </div>
-        </div>
-        <div className={classes.card}>
+        
+        
           <div className={clsx(classes.containImage3D, classes.marginL)}>
             <img className={classes.imageBase} src={mobile4} alt="" />
           </div>
-        </div>
-        <div className={classes.card}>
+        
+        
           <div className={clsx(classes.containImage3D, classes.marginL)}>
             <img className={classes.imageBase} src={mobile5} alt="" />
           </div>
-        </div>
+        
       </div>
     </div>
   )

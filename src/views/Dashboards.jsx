@@ -15,36 +15,56 @@ const Dashboards = (props) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-
+      '@media (max-width: 992px)':{
+        flexDirection: 'column',
+        alignItems: 'center'
+      }
     },
     containImage:{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       maxWidth: '50%',
-      marginLeft: '7em'
+      marginLeft: '7em',
+      '@media (max-width: 992px)':{
+        marginLeft: 0,
+        marginTop: '5em'
+      }
     },
     imageDashboard:{
       width: '110%'
     },
     containText:{
-      maxWidth: '40%'
+      maxWidth: '40%',
+      '@media (max-width: 992px)':{
+        maxWidth: 400,
+      }
     },
     titleDashboards:{
       fontSize: '2rem',
       fontWeight: '600',
       lineHeight: '1.4em',
-      marginBottom: 30
+      marginBottom: 30,
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     },
     paragraphDashboards:{
       fontSize: '1.1rem',
       lineHeight: '1.55em',
       fontWeight: 300,
+      '@media (max-width: 500px)':{
+        textAlign: 'center',
+      }
     },
     containButtons:{
       display: 'flex',
       marginTop: 50,
       justifyContent: 'space-between',
+      '@media (max-width: 500px)':{
+        flexWrap: 'wrap',
+        justifyContent: 'center'
+      }
     },
     buttonBase:{
       borderRadius: 30,
@@ -52,6 +72,9 @@ const Dashboards = (props) => {
       backgroundColor: 'rgba(255, 255, 255, 1)',
       "&:hover": {
         color: '#FFF !important'
+      },
+      '@media (max-width: 500px)':{
+        margin: '10px',
       }
     },
     btnReact:{
@@ -82,18 +105,24 @@ const Dashboards = (props) => {
         </h5>
         <div className={classes.containButtons}>
           <Button
+            href="https://andresparrar.github.io/dashboardReact/"
+            target="_blank"
             variant="contained"
             className={clsx(classes.buttonBase, classes.btnReact)}
             style={{color: "#1389FD", border: "1px solid rgba(19, 137, 253, 0.5)"}}>
             React JS
           </Button>
           <Button
+            href="https://andresparrar.github.io/dashboardVue/"
+            target="_blank"
             variant="contained"
             className={clsx(classes.buttonBase, classes.btnVue)}
             style={{color: "#42b983", border: "1px solid rgba(66, 185, 131, 0.5)"}}>
             Vue JS PRO
           </Button>
           <Button
+            href="https://andresparrar.github.io/dashboardAngular/"
+            target="_blank"
             variant="contained"
             className={clsx(classes.buttonBase, classes.btnAngular)}
             style={{color: "#dd0031", border: "1px solid rgba(221, 0, 49, 0.5)"}}>

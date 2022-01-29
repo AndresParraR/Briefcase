@@ -33,6 +33,7 @@ const Banner = (props) => {
     },
     titleBanner:{
       color: '#fff',
+      textAlign: 'center'
     }
   }));
 

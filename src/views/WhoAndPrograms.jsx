@@ -26,7 +26,10 @@ const WhoAndPrograms = (props) => {
       justifyContent: 'center',
       alignItems: 'center',
       maxWidth: '66.666667%',
-      margin: 'auto'
+      margin: 'auto',
+      '@media (max-width: 700px)':{
+        maxWidth: '100%',
+      }
     },
     containPrograms:{
       display: 'flex',
