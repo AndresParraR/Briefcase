@@ -9,13 +9,14 @@ import PersonIcon from '@material-ui/icons/Person';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
-import personDark from "../assets/images/personDark.jpg";
+import imgBanner from "../assets/images/blackComputer.jpg";
 
 const Banner = (props) => {
   const useStyles = makeStyles((theme) => ({
     root: {
-      backgroundImage: `url(${personDark})`,
-      backgroundPosition: 140,
+      backgroundImage: `url(${imgBanner})`,
+      backgroundPosition: '50% 80%',
+      backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       display: 'flex',
       justifyContent: 'center',
